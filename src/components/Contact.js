@@ -1,59 +1,45 @@
+import { PlayIcon, AtSymbolIcon } from "@heroicons/react/solid";
+
 import React from 'react';
 
 export default function Contact() {
 	return (
-		<section id="contact" className="relative">
-			<div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-				<div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-					<iframe width="100%" height="100%" title="map" className="absolute inset-0" frameBorder={0} marginHeight={0} marginWidth={0} style={{ filter: "opacity(0.7)" }} src="https://www.google.com/maps/embed/v1/place?q=97+warren+st+new+york+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />
-					<div className="bg-yellow-600 relative flex flex-wrap py-6 rounded shadow-md">
-						<div className="lg:w-2/5 px-6">
-							<h2 className="title-font font-semibold text-white tracking-widest text-xs">
-								LOCATION
-							</h2>
-							<p className="mt-1">
-								Columbia, MO
-							</p>
-						</div>
-						<div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-							<h2 className="title-font font-semibold text-white tracking-widest text-xs">
-								EMAIL
-							</h2>
-							<a className="text-gray-300 leading-relaxed">
-								minormischief@gmail.com
-							</a>
+		<section id="contact" className="relative bg-yellow-700">
+			<div className="container px-5 py-10 mx-auto justify-center">
+				<div className="bg-yellow-500 relative flex flex-wrap py-6 w-full rounded shadow-md">
+					<div className="w-full">
+						<h2 className="text-center title-font font-semibold text-white tracking-widest text-s">
+							WHERE TO FIND US
+						</h2>
+						<div className="flex flex-wrap content-center justify-center">
+							<div>
+								<a href="https://www.youtube.com/channel/UC63cTSZzKvMzuzFVTxqcGPg" title="YouTube">
+									<PlayIcon className="w-20 mt-2 mb-2" />
+								</a>
+							</div>
+							<div>
+								<a href="https://github.com/jbr00ks" title="GitHub">
+									<img className="w-16 m-4" alt="GitHub" src="./github.png"/>
+								</a>
+							</div>
+							<div>
+								<a href="http://linkedin.com/in/joshua-brooks-09214219b" title="LinkedIn">
+									<img className="w-16 m-4" alt="LinkedIn" src="./linkedin.png"/>
+								</a>
+							</div>
+							<div>
+								<a href="mailto: jdbrooks0516@gmail.com" title="Email">
+									<AtSymbolIcon className="w-20 mt-2 mb-2" />
+								</a>
+							</div>
+							<div>
+								<a href="https://discord.com/channels/jbr00ks" title="Discord">
+									<img className="w-16 m-4" alt="Discord" src="./discord.png"/>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<form netlify name="contact" className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-					<h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-						Hire Us
-					</h2>
-					<p className="leading-relaxed mb-5">
-						Got an idea? Reach out for a free quote!
-					</p>
-					<div className="relative mb-4">
-						<label htmlFor="name" className="leading-7 text-sm text-white">
-							Name
-						</label>
-						<input type="text" id="name" name="name" className="w-full bg-yellow-300 rounded border border-yellow-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-900 text-base outline-none text-gray-600 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-					</div>
-					<div className="relative mb-4">
-						<label htmlFor="email" className="leading-7 text-sm text-white">
-							Email
-						</label>
-						<input type="email" id="email" name="email" className="w-full bg-yellow-300 rounded border border-yellow-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-900 text-base outline-none text-gray-600 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-					</div>
-					<div className="relative mb-4">
-						<label htmlFor="message" className="leading-7 text-sm text-white">
-							Message
-						</label>
-						<textarea id="message" name="message" className="w-full bg-yellow-300 rounded border border-yellow-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-900 h-32 text-base outline-none text-gray-600 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
-					</div>
-					<button type="submit" className="text-white bg-yellow-600 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-700 rounded text-lg">
-						Submit
-					</button>
-				</form>
 			</div>
 		</section>
 	);
