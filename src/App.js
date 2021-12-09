@@ -3,6 +3,7 @@ import About from './components/About.js'
 import Contact from './components/Contact.js'
 import Navbar from './components/Navbar.js'
 import Projects from './components/Projects.js'
+import Footer from './components/Footer.js'
 
 export default function App() {
 	return (
@@ -11,6 +12,7 @@ export default function App() {
 			<Projects />
 			<About />
 			<Contact />
+			<Footer />
 		</main>
 	);
 }
